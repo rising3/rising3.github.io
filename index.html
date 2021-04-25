@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Michio NAKAGAWA a.k.a RISING3, an architect/developer that web service development</title>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet"/>
+  </head>
+
+  <!--Main Navigation-->
+  <header>
+    <style>
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('img/76.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(2) {
+        background-image: url('img/77.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(3) {
+        background-image: url('img/78.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 35vh;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+
+      body {
+        background-color:whitesmoke;
+        font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+
+      h1 {
+        line-height: 1;
+      }
+
+      h1, .h1 {
+        font-size: 4rem;
+      }
+
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      :root {
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" href="https://rising3.github.io">
+          <strong>RISING3</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#products">PRODUCTS</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="https://opensquare.jp" rel="nofollow" target="_blank">BLOG</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav list-inline">
+            <!-- Icons -->
+            <li class="">
+              <a class="nav-link" href="https://www.linkedin.com/in/michio-nakagawa-080902210/" rel="nofollow" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="https://www.facebook.com/michio.nakagawa" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/rising3" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/rising3" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">SemVer Gradle Plugin</h1>
+                <h5 class="mb-4">A plugin that can updating the semantic versions like `yarn version` command.</h5>
+                <a class="btn btn-outline-light btn-lg m-2" href="https://github.com/rising3/semver-gradle-plugin#readme"
+                  target="_blank" role="button">GETTING STARTED</a>
+                <a class="btn btn-outline-light btn-lg m-2" href="https://plugins.gradle.org/plugin/com.github.rising3.semver"
+                  role="button" rel="nofollow" target="_blank">DOWNLOAD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">SemVer</h1>
+                <h5 class="mb-4">A set of Java libraries from the Semantic Versioning.</h5>
+                <a class="btn btn-outline-light btn-lg m-2" href="https://github.com/rising3/semver#readme"
+                  target="_blank" role="button">GETTING STARTED</a>
+                <a class="btn btn-outline-light btn-lg m-2" href="https://search.maven.org/artifact/com.github.rising3/semver"
+                  role="button" rel="nofollow" target="_blank">DOWNLOAD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.7),
+                  rgba(91, 14, 214, 0.7) 100%
+                );
+              ">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1>Coming Soon!</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section id="about">
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="img/031.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <h1 class="text-primary"><strong>ABOUT</strong></h1>
+            <h2 class="text-secondary mb-0">MICHIO NAKAGAWA
+              <span class="text-dark h4">a.k.a</span>
+              <span>RISING3</span>
+            </h2>
+            <div class="mb-5">
+              <a href="https://rising3.github.io/">https://rising3.github.io</a>
+            </div>
+            <p class="text-muted">
+              I'm an architect/developer that an enterprise Java application development, and a web service development.
+              I'm also playing with JVM(Groovy, Scala, Kotlin, Clojure)/JavaScript/TypeScript and Go, Rust.
+            </p>
+            <p class="text-muted">
+              Motivated to make my happy life with:
+              <ul class="fa-ul mb-0">
+                <li>
+                  <span class="fa-li"><i class="text-success fas fa-check"></i></span>
+                  CI/CD
+                </li>
+                <li>
+                  <span class="fa-li"><i class="text-success fas fa-check"></i></span>
+                  build automation
+                </li>
+                <li>
+                  <span class="fa-li"><i class="text-success fas fa-check"></i></span>
+                  toolchain
+                </li>
+                <li>
+                  <span class="fa-li"><i class="text-success fas fa-check"></i></span>
+                  system and cloud service integration(SOA/ESB)
+                </li>
+                <li>
+                  <span class="fa-li"><i class="text-success fas fa-check"></i></span>
+                  microservices
+                </li>
+                <li>
+                  <span class="fa-li"><i class="text-success fas fa-check"></i></span>
+                  virtualization
+                </li>
+              </ul>
+            </p>
+            <div class="text-center py-4 align-items-center">
+              <a href="https://www.linkedin.com/in/michio-nakagawa-080902210/" class="btn btn-primary m-1" role="button" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-linkedin-in fa-3x"></i>
+              </a>
+              <a href="https://www.facebook.com/michio.nakagawa" class="btn btn-primary m-1" role="button" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-facebook-f fa-3x"></i>
+              </a>
+              <a href="https://twitter.com/rising3" class="btn btn-primary m-1" role="button" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-twitter fa-3x"></i>
+              </a>
+              <a href="https://github.com/rising3" class="btn btn-primary m-1" role="button" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-github fa-3x"></i>
+              </a>
+            </div>
+            <h1 class="text-primary"><strong>SKILLS</strong></h1>
+            <p class="text-muted">
+              <div class="mb-3">Programming Languages & Tools</div>
+              <ul class="text-warning list-inline dev-icons">
+                <li class="list-inline-item"><i class="fab fa-java fa-2x"></i></li>
+                <li class="list-inline-item"><i class="fab fa-js-square fa-2x"></i></li>
+                <li class="list-inline-item"><i class="fab fa-node-js fa-2x"></i></li>
+                <li class="list-inline-item"><i class="fab fa-react fa-2x"></i></li>
+                <li class="list-inline-item"><i class="fab fa-rust fa-2x"></i></li>
+                <li class="list-inline-item"><i class="fab fa-aws fa-2x"></i></li>
+                <li class="list-inline-item"><i class="fab fa-docker fa-2x"></i></li>
+                <li class="list-inline-item"><i class="fab fa-github fa-2x"></i></li>
+                <li class="list-inline-item"><i class="fab fa-html5 fa-2x"></i></li>
+                <li class="list-inline-item"><i class="fab fa-bootstrap fa-2x"></i></li>
+                <li class="list-inline-item"><i class="fab fa-markdown fa-2x"></i></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+      <!--Section: Content-->
+      <section class="text-center" id="products">
+        <h1 class="text-primary mb-5"><strong>PRODUCTS</strong></h1>
+        <div class="row">
+<!--
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+                <a href="#!" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="img/Gradle Elephant Icons/Primary/PNG/gradle-elephant-icon-gradient-primary.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">SemVer Gradle Plugin</h5>
+                <p class="card-text">
+                  Gradle plugin for Updates the project version.A plugin that can updating the semantic versions like `yarn version` command.
+                </p>
+                <a class="btn btn-primary btn-lg d-block m-2" href="https://github.com/rising3/semver-gradle-plugin#readme"
+                  target="_blank" role="button">GETTING STARTED</a>
+                <a class="btn btn-primary btn-lg d-block m-2" href="https://plugins.gradle.org/plugin/com.github.rising3.semver"
+                  role="button" rel="nofollow" target="_blank">DOWNLOAD</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="img/Sonatype_Logo_Full_Set/Sonatype_Stacked_Logo_Color/Sonatype_stacked_logo_full_color.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">SemVer</h5>
+                <p class="card-text">
+                  SemVer is a set of Java libraries from the Semantic Versioning.
+                </p>
+                <a class="btn btn-primary btn-lg d-block m-2" href="https://github.com/rising3/semver#readme"
+                  target="_blank" role="button">GETTING STARTED</a>
+                <a class="btn btn-primary btn-lg d-block m-2" href="https://search.maven.org/artifact/com.github.rising3/semver"
+                  role="button" rel="nofollow" target="_blank">DOWNLOAD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="https://rising3.github.io/">rising3.github.io</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+</html>
