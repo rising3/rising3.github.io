@@ -1,0 +1,160 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold"></div>
+  </div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-2 text-justify">
+    I'm <b>MICHIO NAKAGAWA</b> a.k.a <b>RISING3</b>.
+  </div>
+  <div class="mb-1 text-justify">
+    Software Architect and Developer that an enterprise Java application development, and a web service development.
+  </div>
+  <div class="mb-10 text-justify">
+    I'm also playing with JVM(Java, Groovy, Scala, Kotlin, Clojure)/JavaScript/TypeScript and Go, Rust.
+  </div>
+
+<!--
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Title Name"
+      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+    />
+    <TimeLineElement
+      title="Title Name"
+      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+    />
+  </div>
+-->
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="OGIS RI Co.,Ltd."
+      subtitle="From Jan 1, 2008 at Tokyo, Japan"
+    >
+    <div class="mb-5">
+      I was developing a business system and SaaS.
+      <ul class="list-disc md:columns-1 columns-2 mx-6">
+        <li><b>OS:</b> Windows 7, Windows 10, Windows 11, RHEL, ubuntu, Fedora</li>
+        <li><b>Web/AP Sever:</b> Apache httpd, nginx, Apache Tomcat, Web Logic, Websohere, Cosminexus</li>
+        <li><b>RDBMS:</b> Oracle, HiRDB, MySQL, Postgresql, MongoDB, Redis</li>
+        <li><b>Language:</b> Java, Groovy, Scala, Kotlin, ruby, JavaScript, TypeScript, Python, go</li>
+        <li><b>Framework:</b> Spring Framework, Spring Boot, Serverless Framework, Next.js, Astro,js</li>
+        <li><b>Cloud:</b> AWS, Azure, GCP</li>
+        <li><b>Other1:</b> MuleESB, Apache Camel</li>
+        <li><b>Other2:</b> Chef, terraform</li>
+        <li><b>Other3:</b> GMO Payment Gateway, Stripe</li>
+      </ul>
+    </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="SYSTEM TRUST Co.,Ltd."
+      subtitle="From Oct 1, 1996 to Nov 30, 2007 at Osaka, Japan"
+    >
+    <div class="mb-5">
+      Developing a business system.
+      <ul class="list-disc md:columns-1 columns-2 mx-6">
+        <li><b>OS:</b> Windows 95, Windows NT, Windows Server, SunOS, VMS, CentOS, RHEL</li>
+        <li><b>Web/AP Sever:</b> IIS, Apache httpd, Apache Tomcat, Resin</li>
+        <li><b>RDBMS:</b> Oracle, SQL Server, MySQL, Postgresql, Symfoware</li>
+        <li><b>Language:</b> Visual C++, Visual Basic, VB.NET, C#.NET, ASP.NET, Java</li>
+        <li><b>Framework:</b> Apache Struts, Seasar2, Spring Framework, intra-mart</li>
+        <li><b>Other:</b> A/D Converter, ISDN</li>
+      </ul>
+    </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="NTT SYSTEM DEVELOPMENT Co.,Ltd"
+      subtitle="From Apr 1, 1994 to Aug 1, 1996 at Osaka, Japan"
+    >
+    <div class="mb-5">
+      Developing a business system for a client/server model system.
+      <ul class="list-disc md:columns-1 columns-2 mx-6">
+        <li><b>OS:</b> MS-DOS 6.x, Windows 3.1, Windows 95, Windows NT 3.5, Windows NT 4.0, SunOS</li>
+        <li><b>RDBMS:</b> Oracle, Sybase, SQL Server</li>
+        <li><b>Language:</b> MS-C, Boland C/C++, Visual C++, Visual Basic</li>
+      </ul>
+    </div>
+    </TimeLineElement>
+  </div>
+
+<!--
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+  </ul>
+-->
+
+<!--
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <div class="mb-5">
+    <ul class="list-disc md:columns-5 columns-2 mx-6">
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+      <li>Skill Name</li>
+    </ul>
+  </div>
+-->
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Motivated to make my happy life with</div>
+  </div>
+
+  <div class="mb-5">
+    <ul class="list-disc md:columns-1 columns-2 mx-6">
+      <li>OOP</li>
+      <li>Software architecture</li>
+      <li>Cloud architecture</li>
+      <li>system and cloud service integration(SOA/ESB)</li>
+      <li>microservices</li>
+      <li>virtualization</li>
+      <li>CI/CD</li>
+      <li>IaC</li>
+      <li>build automation</li>
+      <li>toolchain</li>
+      <li>AWS</li>
+      <li>Azure</li>
+      <li>GCP</li>
+    </ul>
+  </div>
+
+</BaseLayout>
