@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rising3.github.io/sitemap-index.xml

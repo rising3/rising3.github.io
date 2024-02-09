@@ -128,3 +128,19 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# build output
+dist/
+docs/
+.cache
+
+# Astro
+.astro/
