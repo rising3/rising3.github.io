@@ -1,0 +1,11 @@
+---
+title: "SemVer"
+description: "SemVer is a set of Java libraries from the Semantic Versioning."
+url: "https://github.com/rising3/semver"
+heroImage: "/post_img.webp"
+pubDate: "Mar 2 2021"
+badge: "Apache-2.0"
+tags:
+  - "Java"
+  - "Kotlin"
+  - "maven"

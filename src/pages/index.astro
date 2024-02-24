@@ -4,8 +4,10 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
+const projects = (await getCollection("project")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
+const last_projects = projects.slice(0, 3);
 const last_posts = posts.slice(0, 3);
 ---
 
@@ -32,48 +34,44 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last FOSS Projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">My last Projects {"</>"}</div>
   </div>
 
-  <HorizontalCard
-    title="ec-sign-js"
-    img="/icon-npm.webp"
-    desc="ECDSA cryptographic signature library for JavaScript."
-    url="https://github.com/rising3/ec-sign-js"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="ec-sign-java"
-    img="/post_img.webp"
-    desc="ECDSA cryptographic signature library for Java."
-    url="https://github.com/rising3/ec-sign-java"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="manjaro-wsl2"
-    img="/manjaro-wsl2.webp"
-    desc="Manjaro on wsl2 using wsldl."
-    url="https://github.com/rising3/manjaro-wsl2"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
+  {
+    last_projects.map((item) => (
+      <>
+        <HorizontalCard
+          title={item.data.title}
+          img={item.data.heroImage}
+          desc={item.data.description}
+          pubDate={item.data.pubDate}
+          url={"/project/" + createSlug(item.data.title, item.slug)}
+          externalUrl={item.data.url}
+          target="_blank"
+          badge={item.data.badge}
+          tags={item.data.tags}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
  
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
   </div>
 
   {
-    last_posts.map((post) => (
+    last_posts.map((item) => (
       <>
         <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          title={item.data.title}
+          img={item.data.heroImage}
+          desc={item.data.description}
+          pubDate={item.data.pubDate}
+          url={"/blog/" + createSlug(item.data.title, item.slug)}
           target="_self"
-          badge={post.data.badge}
+          badge={item.data.badge}
+          tags={item.data.tags}
         />
         <div class="divider my-0" />
       </>

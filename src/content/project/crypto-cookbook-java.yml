@@ -1,0 +1,11 @@
+---
+title: "crypto cookbook for Kotlin"
+description: "How to use javax.crypto for Java"
+url: "https://github.com/rising3/crypto-cookbook-kt"
+heroImage: "/post_img.webp"
+pubDate: "Jul 31 2022"
+badge: "MIT"
+tags:
+  - "Java"
+  - "Kotlin"
+  - "crypto"
