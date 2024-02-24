@@ -5,16 +5,16 @@ import { getCollection } from "astro:content";
 import createSlug from "../../../../lib/createSlug";
 
 export async function getStaticPaths({ paginate }) {
-  const all_posts = await getCollection("blog");
-  const all_tags = all_posts.flatMap((post) => {
-    return post.data.tags || [];
+  const all_items = await getCollection("project");
+  const all_tags = all_items.flatMap((item) => {
+    return item.data.tags || [];
   });
 
   return all_tags.flatMap((tag) => {
-    const filtred_posts = all_posts.filter((post) => {
-      return post.data.tags?.includes(tag);
+    const filtred_items = all_items.filter((item) => {
+      return item.data.tags?.includes(tag);
     });
-    return paginate(filtred_posts, {
+    return paginate(filtred_items, {
       params: { tag },
       pageSize: 10,
     });
@@ -25,15 +25,15 @@ const { page } = Astro.props;
 const params = Astro.params;
 ---
 
-<BaseLayout title={"Blog - " + params.tag} sideBarActiveItemID="blog">
+<BaseLayout title={"Projects - " + params.tag} sideBarActiveItemID="project">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Blog - {params.tag}</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects - {params.tag}</div>
   </div>
   {
     page.data.length === 0 ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
         <p class="font-bold">Sorry!</p>
-        <p>There are no blog posts to show at the moment. Check back later!</p>
+        <p>There are no projects to show at the moment. Check back later!</p>
       </div>
     ) : (
       <ul>
@@ -44,8 +44,9 @@ const params = Astro.params;
               img={item.data.heroImage}
               desc={item.data.description}
               pubDate={item.data.pubDate}
-              url={"/blog/" + createSlug(item.data.title, item.slug)}
-              target="_self"
+              url={"/project/" + createSlug(item.data.title, item.slug)}
+              externalUrl={item.data.url}
+              target="_blank"
               badge={item.data.badge}
               tags={item.data.tags}
             />

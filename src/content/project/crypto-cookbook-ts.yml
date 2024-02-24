@@ -1,0 +1,11 @@
+---
+title: "crypto cookbook for TypeScript"
+description: "How to use node:crypto module for Node.js"
+url: "https://github.com/rising3/crypto-cookbook-ts"
+heroImage: "/post_img.webp"
+pubDate: "Jul 31 2022"
+badge: "MIT"
+tags:
+  - "node.js"
+  - "TypeScript"
+  - "crypto"

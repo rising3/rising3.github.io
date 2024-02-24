@@ -1,0 +1,11 @@
+title: "semver-gradle-plugin"
+description: "Gradle plugin for Updates the project version.A plugin that can updating the semantic versions like `yarn version` command."
+url: "https://github.com/rising3/semver-gradle-plugin"
+pubDate: "Sep 5 2021"
+heroImage: "/post_img.webp"
+badge: "Apache-2.0"
+tags:
+  - "Java"
+  - "Groovy"
+  - "Gradle"
+  - "Gradle-Plugin"

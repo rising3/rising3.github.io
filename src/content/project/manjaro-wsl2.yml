@@ -1,0 +1,10 @@
+title: "manjaro-wsl2"
+description: "Manjaro on wsl2 using wsldl."
+url: "https://github.com/rising3/manjaro-wsl2"
+pubDate: "Jul 15 2023"
+heroImage: "/manjaro-wsl2.webp"
+badge: "MIT"
+tags:
+  - "wsl2"
+  - "manjaro"
+  - "linux"
